@@ -83,6 +83,12 @@ if (message.content === '!spam') {
 
 
 
+client.login(process.env.TOKEN);// لا تغير فيها شيء
+client2.login(process.env.TOKEN2);// لا تغير فيها شيء
+
+
+
+
 client.on('message', message => {
     let prefix = 'البريفكس';
    if(message.content.startsWith('say')) {
@@ -91,7 +97,3 @@ client.on('message', message => {
    } 
 });
 
-
-
-client.login(process.env.TOKEN);// لا تغير فيها شيء
-client2.login(process.env.TOKEN2);// لا تغير فيها شيء
